@@ -13,18 +13,21 @@ npx create-react-app reac-projec-for-docker
 cd react-projec-for-docker
  npm start  
 ```
+
+Résulat :
+
 ![](screen/screen01.png)
 
-## Créez un fichier Dockerfile à la racine du projet. Celui-ci doit se diviser en deux
-grandes parties :
-a. Étape 1 : Construction de l'application React
+## Créez un fichier Dockerfile à la racine du projet. Celui-ci doit se diviser en deux grandes parties :
+Étape 1 : Construction de l'application React
 FROM node:18-alpine as build
-b. Étape 2 : Serveur web pour l'application
+
+Étape 2 : Serveur web pour l'application
 FROM nginx:alpine
 
 Voir Dockerfile
 
-5. Instanciez l’image
+## Instanciez l’image
 
 ```
 docker build -t image-react .
