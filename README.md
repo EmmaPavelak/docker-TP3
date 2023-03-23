@@ -4,7 +4,7 @@
 ## Initialisez un projet React vierge
 
 ```
-npx create-react-app reac-projec-for-docker
+npx create-react-app react-projec-for-docker
 
 ```
 ## Vérifiez que l'application fonctionne correctement en local
